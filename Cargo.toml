@@ -33,3 +33,8 @@ members = [
     "drm-ffi",
     "drm-ffi/drm-sys",
 ]
+
+[patch.crates-io]
+rustix_main = { package = 'rustix', git = 'https://github.com/helce/rustix', branch = 'devel_e2k' }
+linux-raw-sys_09 = { package = 'linux-raw-sys', git = 'https://github.com/helce/linux-raw-sys', tag = 'v0.9.4'}
+linux-raw-sys_12 = { package = 'linux-raw-sys', git = 'https://github.com/helce/linux-raw-sys', tag = 'v0.12.1'}
